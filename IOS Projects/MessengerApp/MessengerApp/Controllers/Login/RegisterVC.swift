@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterVC: UIViewController {
     
@@ -37,7 +38,8 @@ class RegisterVC: UIViewController {
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor.lightGray.cgColor
         textField.placeholder = "First Name..."
-        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0,
+                                                   width: 5, height: 0))
         textField.leftViewMode = .always
         textField.backgroundColor = .white
         return textField
@@ -191,6 +193,11 @@ class RegisterVC: UIViewController {
         }
         
         // Firebase login
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+            guard let result = authResult, error == nil else { return }
+            let user = result.user
+            print("DEBUG: Created User: \(user)")
+        }
     }
     
     func alertUserLoginError(){
