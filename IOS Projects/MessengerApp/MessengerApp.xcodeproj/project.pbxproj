@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		12AD95FE03CEC29E0679FD89 /* Pods_MessengerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE4A2B590B3BFEA00DCD1BA /* Pods_MessengerApp.framework */; };
 		1A05264625185A2000590034 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A05264525185A2000590034 /* GoogleService-Info.plist */; };
+		1A05264925187C3400590034 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05264825187C3400590034 /* DatabaseManager.swift */; };
 		1A495096251729040095CDCA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A495095251729040095CDCA /* Extensions.swift */; };
 		1A69E6A425170B5E007EF257 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69E6A325170B5E007EF257 /* AppDelegate.swift */; };
 		1A69E6A625170B5E007EF257 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69E6A525170B5E007EF257 /* SceneDelegate.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		08C805A713F84B1EAA6F0FC7 /* Pods-MessengerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessengerApp.debug.xcconfig"; path = "Target Support Files/Pods-MessengerApp/Pods-MessengerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		1A05264525185A2000590034 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1A05264825187C3400590034 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		1A495095251729040095CDCA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1A69E6A025170B5E007EF257 /* MessengerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A69E6A325170B5E007EF257 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				1A69E6A325170B5E007EF257 /* AppDelegate.swift */,
 				1A69E6A525170B5E007EF257 /* SceneDelegate.swift */,
 				1A495095251729040095CDCA /* Extensions.swift */,
+				1A05264825187C3400590034 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A69E6CD25170E17007EF257 /* NewConversationVC.swift in Sources */,
+				1A05264925187C3400590034 /* DatabaseManager.swift in Sources */,
 				1A69E6C725170DF5007EF257 /* VideoPlayerVC.swift in Sources */,
 				1A69E6A825170B5E007EF257 /* ConversationsVC.swift in Sources */,
 				1A69E6A425170B5E007EF257 /* AppDelegate.swift in Sources */,
