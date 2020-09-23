@@ -178,6 +178,7 @@
 				1A69E69D25170B5E007EF257 /* Frameworks */,
 				1A69E69E25170B5E007EF257 /* Resources */,
 				034EC2D92659863FDA4F3EBF /* [CP] Embed Pods Frameworks */,
+				A31D6F2DCFC6CB505DFDA5A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +251,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MessengerApp/Pods-MessengerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A31D6F2DCFC6CB505DFDA5A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MessengerApp/Pods-MessengerApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MessengerApp/Pods-MessengerApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MessengerApp/Pods-MessengerApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D987FF85D7CBAEF9BC40A599 /* [CP] Check Pods Manifest.lock */ = {

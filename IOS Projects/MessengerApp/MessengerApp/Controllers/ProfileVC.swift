@@ -7,6 +7,8 @@
 
 import UIKit
 import FirebaseAuth
+import FBSDKLoginKit
+import GoogleSignIn
 
 
 class ProfileVC: UIViewController {
@@ -52,20 +54,27 @@ extension ProfileVC: UITableViewDelegate, UITableViewDataSource {
                                             style: .destructive,
                                             handler: { [weak self] (_) in
                                                 
-            guard let strongSelf = self else {return}
+                                                guard let strongSelf = self else {return}
                                                 
-            do {
-                try FirebaseAuth.Auth.auth().signOut()
-                let viewController = LoginVC()
-                let navigationController = UINavigationController(rootViewController: viewController)
-                navigationController.modalPresentationStyle = .fullScreen
-                strongSelf.present(navigationController,
-                                   animated: true,
-                                   completion: nil)
-            } catch {
-                print("DEBUG: Failed to sign out")
-            }
-        }))
+                                                // Log out of Facebook
+                                                FBSDKLoginKit.LoginManager().logOut()
+                                                
+                                                // Log out Google
+                                                GIDSignIn.sharedInstance()?.signOut()
+                                                
+                                                do {
+                                                    // Log out of Firebase
+                                                    try FirebaseAuth.Auth.auth().signOut()
+                                                    let viewController = LoginVC()
+                                                    let navigationController = UINavigationController(rootViewController: viewController)
+                                                    navigationController.modalPresentationStyle = .fullScreen
+                                                    strongSelf.present(navigationController,
+                                                                       animated: true,
+                                                                       completion: nil)
+                                                } catch {
+                                                    print("DEBUG: Failed to sign out")
+                                                }
+                                            }))
         
         actionSheet.addAction(UIAlertAction(title: "Cancel",
                                             style: .cancel,

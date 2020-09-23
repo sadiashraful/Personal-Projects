@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 import FBSDKLoginKit
+import GoogleSignIn
 
 class LoginVC: UIViewController {
     
@@ -77,11 +78,26 @@ class LoginVC: UIViewController {
         return button
     }()
     
+    private let googleLoginButton: GIDSignInButton = {
+        let button = GIDSignInButton()
+        button.layer.cornerRadius = 12
+        button.layer.masksToBounds = true
+        return button
+    }()
+    
+    private var loginObserver: NSObjectProtocol?
+    
     //MARK:- Lifecycle:
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Log In"
         view.backgroundColor = .white
+        
+        loginObserver = NotificationCenter.default.addObserver(forName: .didLogInNotification,
+                                                               object: nil, queue: .main, using: { [weak self] _ in
+            guard let strongSelf = self else { return }
+            strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+        })
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register",
                                                             style: .done, target: self,
@@ -92,6 +108,7 @@ class LoginVC: UIViewController {
         emailField.delegate = self
         passwordField.delegate = self
         facebookLoginButon.delegate = self
+        GIDSignIn.sharedInstance()?.presentingViewController = self
         
         //Add subviews
         view.addSubview(scrollView)
@@ -100,6 +117,13 @@ class LoginVC: UIViewController {
         scrollView.addSubview(passwordField)
         scrollView.addSubview(loginButton)
         scrollView.addSubview(facebookLoginButon)
+        scrollView.addSubview(googleLoginButton)
+    }
+    
+    deinit {
+        if let observer = loginObserver {
+            NotificationCenter.default.removeObserver(observer)
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -130,8 +154,12 @@ class LoginVC: UIViewController {
                                           y: loginButton.bottom+10,
                                           width: scrollView.width-60,
                                           height: 52)
-        facebookLoginButon.frame.origin.y = loginButton.bottom + 10
         
+        
+        googleLoginButton.frame = CGRect(x: 30,
+                                         y: facebookLoginButon.bottom+10,
+                                         width: scrollView.width-60,
+                                         height: 52)
         
     }
     
