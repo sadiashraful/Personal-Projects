@@ -63,14 +63,41 @@ extension AppDelegate: GIDSignInDelegate {
         guard let email = user.profile.email,
               let firstName = user.profile.givenName,
               let lastName = user.profile.familyName else {
-                return
+            return
         }
         
         DatabaseManager.shared.userExists(with: email) { (exists) in
             if !exists {
-                DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firstName,
-                                                                    lastName: lastName,
-                                                                    emailAddress: email))
+                let chatUser = ChatAppUser(firstName: firstName,
+                                           lastName: lastName,
+                                           emailAddress: email)
+                DatabaseManager.shared.insertUser(with: chatUser, completion: { success in
+                    if success {
+                        // upload image
+                        
+                        if user.profile.hasImage {
+                            guard let url = user.profile.imageURL(withDimension: 200) else {
+                                return
+                            }
+                            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                                guard let data = data else {
+                                    return
+                                }
+                                let fileName = chatUser.profilePictureFileName
+                                StorageManager.shared.uploadProfilePicture(with: data,
+                                                                           fileName: fileName) { (result) in
+                                    switch result {
+                                    case .success(let downloadUrl):
+                                        UserDefaults.standard.set(downloadUrl, forKey: "profile_picture_url")
+                                        print(downloadUrl)
+                                    case .failure(let error):
+                                        print("Storage manager error: \(error)")
+                                    }
+                                }
+                            }.resume()
+                        }
+                    }
+                })
             }
         }
         
@@ -78,9 +105,9 @@ extension AppDelegate: GIDSignInDelegate {
             print("DEBUG: Missing auth object off of google user")
             return
         }
-          let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                            accessToken: authentication.accessToken)
-          
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        
         FirebaseAuth.Auth.auth().signIn(with: credential) { (authResult, error) in
             guard authResult != nil, error == nil else {
                 print("DEBUG: Failed to log in with google credential")
@@ -95,7 +122,7 @@ extension AppDelegate: GIDSignInDelegate {
         print("DEBUG: Google user was disconnected!")
         
     }
-
+    
     
     
 }
