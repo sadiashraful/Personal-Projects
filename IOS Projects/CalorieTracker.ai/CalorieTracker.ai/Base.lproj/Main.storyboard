@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iZi-JG-sRJ">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App Tutorial View Controller-->
+        <scene sceneID="cDe-Ii-7dU">
+            <objects>
+                <viewController id="iZi-JG-sRJ" customClass="AppTutorialViewController" customModule="CalorieTracker_ai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="roi-2p-K2O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kur-m5-Ex8" customClass="OnboardingView" customModule="CalorieTracker_ai" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmy-1x-6Re">
+                                <rect key="frame" x="140" y="570" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="oj8-Ld-NBI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eKj-et-HYb" firstAttribute="top" secondItem="kur-m5-Ex8" secondAttribute="top" constant="20" id="5Rj-AI-KFB"/>
+                            <constraint firstItem="eKj-et-HYb" firstAttribute="bottom" secondItem="kur-m5-Ex8" secondAttribute="bottom" id="W34-Qk-8o3"/>
+                            <constraint firstItem="eKj-et-HYb" firstAttribute="trailing" secondItem="kur-m5-Ex8" secondAttribute="trailing" id="tDT-kV-bWA"/>
+                            <constraint firstItem="kur-m5-Ex8" firstAttribute="leading" secondItem="eKj-et-HYb" secondAttribute="leading" id="vij-Po-Wxi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eKj-et-HYb"/>
+                    </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="kmy-1x-6Re" id="IkO-MB-nWK"/>
+                        <outlet property="onboardingView" destination="kur-m5-Ex8" id="yoe-wW-fLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ao3-1H-BeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-533.33333333333337" y="127.98913043478262"/>
+        </scene>
+        <!--Food Classifier View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FoodClassifierViewController" customModule="CalorieTracker_ai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t8T-pR-dUJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nw5-8z-8vz">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="15s-Bf-R7g">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cameraButtonWasPressed:" destination="BYZ-38-t0r" id="ATE-93-4VG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdO-gN-aJB" customClass="RoundedVisualEffectView" customModule="CalorieTracker_ai" customModuleProvider="target">
+                                <rect key="frame" x="20" y="592" width="374" height="80"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Fxz-jV-Jnj">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press the camera button to choose an image" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="VZV-Iw-6ac">
+                                            <rect key="frame" x="8" y="8" width="358" height="64"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="VZV-Iw-6ac" secondAttribute="trailing" constant="8" id="14M-Sp-7zt"/>
+                                        <constraint firstItem="VZV-Iw-6ac" firstAttribute="leading" secondItem="Fxz-jV-Jnj" secondAttribute="leading" constant="8" id="eWR-na-zPJ"/>
+                                        <constraint firstItem="VZV-Iw-6ac" firstAttribute="top" secondItem="Fxz-jV-Jnj" secondAttribute="top" constant="8" id="fF3-eH-kdX"/>
+                                        <constraint firstAttribute="bottom" secondItem="VZV-Iw-6ac" secondAttribute="bottom" constant="8" id="va2-tg-558"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="gfY-Ox-vSy"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nw5-8z-8vz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0FT-Xk-abE"/>
+                            <constraint firstItem="Nw5-8z-8vz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="80d-kc-I39"/>
+                            <constraint firstItem="Nw5-8z-8vz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Be9-LN-dmj"/>
+                            <constraint firstItem="Nw5-8z-8vz" firstAttribute="top" secondItem="LdO-gN-aJB" secondAttribute="bottom" constant="20" id="ICr-eF-mc8"/>
+                            <constraint firstItem="t8T-pR-dUJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JO0-mn-zB7"/>
+                            <constraint firstItem="t8T-pR-dUJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PgP-Vs-ln2"/>
+                            <constraint firstItem="t8T-pR-dUJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XJg-hU-ptf"/>
+                            <constraint firstItem="t8T-pR-dUJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f0r-Oa-zzw"/>
+                            <constraint firstItem="LdO-gN-aJB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kIw-Fe-fbd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LdO-gN-aJB" secondAttribute="trailing" constant="20" id="sjj-Vp-gGW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="classificationLabel" destination="VZV-Iw-6ac" id="F8f-N2-M9I"/>
+                        <outlet property="imageView" destination="t8T-pR-dUJ" id="TiG-bL-Tue"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="129"/>
+        </scene>
+    </scenes>
+</document>

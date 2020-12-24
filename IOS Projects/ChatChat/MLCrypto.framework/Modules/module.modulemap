@@ -1,0 +1,11 @@
+framework module MLCrypto {
+  umbrella header "MLCrypto.h"
+
+  export *
+  module * { export * }
+}
+
+module MLCrypto.Swift {
+    header "MLCrypto-Swift.h"
+    requires objc
+}

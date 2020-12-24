@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A5C7060252E9459006833F4 /* AppLogoAndNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C705F252E9459006833F4 /* AppLogoAndNameView.swift */; };
+		1A5C7064252E9477006833F4 /* MasterContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C7063252E9477006833F4 /* MasterContainerView.swift */; };
+		1A5C7067252E94AD006833F4 /* LoginCredentialsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C7066252E94AD006833F4 /* LoginCredentialsContainerView.swift */; };
+		1A5C706A252E94BD006833F4 /* SocialMediaSignInContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C7069252E94BD006833F4 /* SocialMediaSignInContainerView.swift */; };
+		1A5C7071252E9928006833F4 /* DontHaveAccountContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C7070252E9928006833F4 /* DontHaveAccountContainerView.swift */; };
+		1A5C707A252EDB04006833F4 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C7079252EDB04006833F4 /* DiscoverVC.swift */; };
+		1A5C707D252EDB4F006833F4 /* NearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C707C252EDB4F006833F4 /* NearbyVC.swift */; };
+		1A5C7080252EDB5B006833F4 /* AppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C707F252EDB5B006833F4 /* AppointmentVC.swift */; };
+		1A5C7083252EDB66006833F4 /* MessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C7082252EDB66006833F4 /* MessagesVC.swift */; };
+		1A5C7086252EDB70006833F4 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C7085252EDB70006833F4 /* ProfileVC.swift */; };
+		1A5C708C252EF8F3006833F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C708B252EF8F3006833F4 /* Extensions.swift */; };
 		1A5F1B86252D918300B6BA35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F1B85252D918300B6BA35 /* AppDelegate.swift */; };
 		1A5F1B88252D918300B6BA35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F1B87252D918300B6BA35 /* SceneDelegate.swift */; };
 		1A5F1B8A252D918300B6BA35 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F1B89252D918300B6BA35 /* LoginVC.swift */; };
@@ -22,6 +33,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A5C705F252E9459006833F4 /* AppLogoAndNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogoAndNameView.swift; sourceTree = "<group>"; };
+		1A5C7063252E9477006833F4 /* MasterContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterContainerView.swift; sourceTree = "<group>"; };
+		1A5C7066252E94AD006833F4 /* LoginCredentialsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentialsContainerView.swift; sourceTree = "<group>"; };
+		1A5C7069252E94BD006833F4 /* SocialMediaSignInContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaSignInContainerView.swift; sourceTree = "<group>"; };
+		1A5C7070252E9928006833F4 /* DontHaveAccountContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DontHaveAccountContainerView.swift; sourceTree = "<group>"; };
+		1A5C7079252EDB04006833F4 /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		1A5C707C252EDB4F006833F4 /* NearbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVC.swift; sourceTree = "<group>"; };
+		1A5C707F252EDB5B006833F4 /* AppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentVC.swift; sourceTree = "<group>"; };
+		1A5C7082252EDB66006833F4 /* MessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesVC.swift; sourceTree = "<group>"; };
+		1A5C7085252EDB70006833F4 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		1A5C708B252EF8F3006833F4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1A5F1B82252D918300B6BA35 /* GroomedStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroomedStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5F1B85252D918300B6BA35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A5F1B87252D918300B6BA35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +71,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A5C705E252E9408006833F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A5C705F252E9459006833F4 /* AppLogoAndNameView.swift */,
+				1A5C7063252E9477006833F4 /* MasterContainerView.swift */,
+				1A5C7066252E94AD006833F4 /* LoginCredentialsContainerView.swift */,
+				1A5C7069252E94BD006833F4 /* SocialMediaSignInContainerView.swift */,
+				1A5C7070252E9928006833F4 /* DontHaveAccountContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A5C7074252EDAA6006833F4 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				1A5C7079252EDB04006833F4 /* DiscoverVC.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		1A5C7075252EDAB0006833F4 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				1A5C7082252EDB66006833F4 /* MessagesVC.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		1A5C7076252EDAB3006833F4 /* Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				1A5C707F252EDB5B006833F4 /* AppointmentVC.swift */,
+			);
+			path = Appointment;
+			sourceTree = "<group>";
+		};
+		1A5C7077252EDAB6006833F4 /* Nearby */ = {
+			isa = PBXGroup;
+			children = (
+				1A5C707C252EDB4F006833F4 /* NearbyVC.swift */,
+			);
+			path = Nearby;
+			sourceTree = "<group>";
+		};
+		1A5C7078252EDADB006833F4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1A5C7085252EDB70006833F4 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1A5C7088252EF069006833F4 /* SupportingVCs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingVCs;
+			sourceTree = "<group>";
+		};
+		1A5C708A252EF8E2006833F4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1A5C708B252EF8F3006833F4 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		1A5F1B79252D918300B6BA35 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +170,7 @@
 		1A5F1B9A252D91D700B6BA35 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1A5C708A252EF8E2006833F4 /* Utilities */,
 				1A5F1B85252D918300B6BA35 /* AppDelegate.swift */,
 				1A5F1B87252D918300B6BA35 /* SceneDelegate.swift */,
 			);
@@ -97,7 +187,13 @@
 		1A5F1B9C252D91E300B6BA35 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1A5C7088252EF069006833F4 /* SupportingVCs */,
 				1A5F1B9F252D921200B6BA35 /* Login */,
+				1A5C7074252EDAA6006833F4 /* Discover */,
+				1A5C7077252EDAB6006833F4 /* Nearby */,
+				1A5C7076252EDAB3006833F4 /* Appointment */,
+				1A5C7075252EDAB0006833F4 /* Messages */,
+				1A5C7078252EDADB006833F4 /* Profile */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -121,6 +217,7 @@
 		1A5F1B9F252D921200B6BA35 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				1A5C705E252E9408006833F4 /* Views */,
 				1A5F1B89252D918300B6BA35 /* LoginVC.swift */,
 				1A5F1BB6252D999000B6BA35 /* SignupVC.swift */,
 			);
@@ -216,8 +313,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5C706A252E94BD006833F4 /* SocialMediaSignInContainerView.swift in Sources */,
+				1A5C707A252EDB04006833F4 /* DiscoverVC.swift in Sources */,
+				1A5C7086252EDB70006833F4 /* ProfileVC.swift in Sources */,
+				1A5C7060252E9459006833F4 /* AppLogoAndNameView.swift in Sources */,
 				1A5F1BB7252D999000B6BA35 /* SignupVC.swift in Sources */,
+				1A5C7067252E94AD006833F4 /* LoginCredentialsContainerView.swift in Sources */,
+				1A5C707D252EDB4F006833F4 /* NearbyVC.swift in Sources */,
+				1A5C7080252EDB5B006833F4 /* AppointmentVC.swift in Sources */,
+				1A5C7083252EDB66006833F4 /* MessagesVC.swift in Sources */,
+				1A5C7071252E9928006833F4 /* DontHaveAccountContainerView.swift in Sources */,
+				1A5C708C252EF8F3006833F4 /* Extensions.swift in Sources */,
 				1A5F1B8A252D918300B6BA35 /* LoginVC.swift in Sources */,
+				1A5C7064252E9477006833F4 /* MasterContainerView.swift in Sources */,
 				1A5F1B86252D918300B6BA35 /* AppDelegate.swift in Sources */,
 				1A5F1B88252D918300B6BA35 /* SceneDelegate.swift in Sources */,
 			);

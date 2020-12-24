@@ -1,0 +1,1093 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		119709DB24DAEDFA001F5256 /* sworim.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 119709DA24DAEDFA001F5256 /* sworim.sqlite */; };
+		1A294CB124BA0C37007DB602 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A294CB024BA0C37007DB602 /* BaseCell.swift */; };
+		1A294CB424BA15B1007DB602 /* ResizingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A294CB324BA15B1007DB602 /* ResizingTextView.swift */; };
+		1A294CB724BA16D4007DB602 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A294CB624BA16D4007DB602 /* ChatCell.swift */; };
+		1A294CB924BA19BE007DB602 /* ChatImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A294CB824BA19BE007DB602 /* ChatImageCell.swift */; };
+		1A294CBB24BA1C1C007DB602 /* LinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A294CBA24BA1C1C007DB602 /* LinkCell.swift */; };
+		1A294CC024BA2369007DB602 /* ChatInputContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A294CBF24BA2369007DB602 /* ChatInputContainer.swift */; };
+		1A294CC224BA2453007DB602 /* ChatMapsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A294CC124BA2453007DB602 /* ChatMapsCell.swift */; };
+		1A294CC424BA25F3007DB602 /* ComposeMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A294CC324BA25F3007DB602 /* ComposeMessageVC.swift */; };
+		1A2F65BF24AA06DD00964BE7 /* libjrtplib-static.a in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6909249B2EE300583FF8 /* libjrtplib-static.a */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1A2F6E3024AAF58000964BE7 /* rtpudpv4transmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DDB24AAF58000964BE7 /* rtpudpv4transmitter.cpp */; };
+		1A2F6E3124AAF58000964BE7 /* rtpsourcedata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DDC24AAF58000964BE7 /* rtpsourcedata.cpp */; };
+		1A2F6E3224AAF58000964BE7 /* rtcppacketbuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DE024AAF58000964BE7 /* rtcppacketbuilder.cpp */; };
+		1A2F6E3324AAF58000964BE7 /* rtprandomurandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DE224AAF58000964BE7 /* rtprandomurandom.cpp */; };
+		1A2F6E3424AAF58000964BE7 /* rtpsession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DE724AAF58000964BE7 /* rtpsession.cpp */; };
+		1A2F6E3524AAF58000964BE7 /* rtcpcompoundpacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DE824AAF58000964BE7 /* rtcpcompoundpacket.cpp */; };
+		1A2F6E3624AAF58000964BE7 /* rtcpsrpacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DEA24AAF58000964BE7 /* rtcpsrpacket.cpp */; };
+		1A2F6E3724AAF58000964BE7 /* rtperrors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DEF24AAF58000964BE7 /* rtperrors.cpp */; };
+		1A2F6E3824AAF58000964BE7 /* rtcpapppacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DF124AAF58000964BE7 /* rtcpapppacket.cpp */; };
+		1A2F6E3924AAF58000964BE7 /* rtpbyteaddress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DF324AAF58000964BE7 /* rtpbyteaddress.cpp */; };
+		1A2F6E3A24AAF58000964BE7 /* rtpsessionsources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DF524AAF58000964BE7 /* rtpsessionsources.cpp */; };
+		1A2F6E3B24AAF58000964BE7 /* rtpsources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DF724AAF58000964BE7 /* rtpsources.cpp */; };
+		1A2F6E3C24AAF58000964BE7 /* rtpdebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DF824AAF58000964BE7 /* rtpdebug.cpp */; };
+		1A2F6E3D24AAF58000964BE7 /* rtcpscheduler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DFB24AAF58000964BE7 /* rtcpscheduler.cpp */; };
+		1A2F6E3E24AAF58000964BE7 /* rtppacketbuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6DFD24AAF58000964BE7 /* rtppacketbuilder.cpp */; };
+		1A2F6E3F24AAF58100964BE7 /* rtpudpv6transmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E0124AAF58000964BE7 /* rtpudpv6transmitter.cpp */; };
+		1A2F6E4024AAF58100964BE7 /* rtpsessionparams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E0224AAF58000964BE7 /* rtpsessionparams.cpp */; };
+		1A2F6E4124AAF58100964BE7 /* rtcpsdesinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E0324AAF58000964BE7 /* rtcpsdesinfo.cpp */; };
+		1A2F6E4224AAF58100964BE7 /* rtcppacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E0A24AAF58000964BE7 /* rtcppacket.cpp */; };
+		1A2F6E4324AAF58100964BE7 /* rtprandomrands.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E0D24AAF58000964BE7 /* rtprandomrands.cpp */; };
+		1A2F6E4424AAF58100964BE7 /* rtcprrpacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E0F24AAF58000964BE7 /* rtcprrpacket.cpp */; };
+		1A2F6E4524AAF58100964BE7 /* rtpexternaltransmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E1024AAF58000964BE7 /* rtpexternaltransmitter.cpp */; };
+		1A2F6E4624AAF58100964BE7 /* rtptimeutilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E1224AAF58000964BE7 /* rtptimeutilities.cpp */; };
+		1A2F6E4724AAF58100964BE7 /* rtcpbyepacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E1A24AAF58000964BE7 /* rtcpbyepacket.cpp */; };
+		1A2F6E4824AAF58100964BE7 /* rtpinternalsourcedata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E1B24AAF58000964BE7 /* rtpinternalsourcedata.cpp */; };
+		1A2F6E4924AAF58100964BE7 /* rtpipv6address.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E1C24AAF58000964BE7 /* rtpipv6address.cpp */; };
+		1A2F6E4A24AAF58100964BE7 /* rtprandomrand48.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E1D24AAF58000964BE7 /* rtprandomrand48.cpp */; };
+		1A2F6E4B24AAF58100964BE7 /* rtprandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E2424AAF58000964BE7 /* rtprandom.cpp */; };
+		1A2F6E4C24AAF58100964BE7 /* rtcpsdespacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E2524AAF58000964BE7 /* rtcpsdespacket.cpp */; };
+		1A2F6E4D24AAF58100964BE7 /* rtpcollisionlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E2624AAF58000964BE7 /* rtpcollisionlist.cpp */; };
+		1A2F6E4E24AAF58100964BE7 /* rtplibraryversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E2724AAF58000964BE7 /* rtplibraryversion.cpp */; };
+		1A2F6E4F24AAF58100964BE7 /* rtcpcompoundpacketbuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E2824AAF58000964BE7 /* rtcpcompoundpacketbuilder.cpp */; };
+		1A2F6E5024AAF58100964BE7 /* rtppacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E2A24AAF58000964BE7 /* rtppacket.cpp */; };
+		1A2F6E5124AAF58100964BE7 /* rtppollthread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E2C24AAF58000964BE7 /* rtppollthread.cpp */; };
+		1A2F6E5224AAF58100964BE7 /* rtpipv4address.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F6E2E24AAF58000964BE7 /* rtpipv4address.cpp */; };
+		1A3A07C024E6D4220085FB05 /* ContactDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3A07BF24E6D4220085FB05 /* ContactDetailsVC.swift */; };
+		1A3A07C224E6D4480085FB05 /* ContactDetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3A07C124E6D4480085FB05 /* ContactDetailHeaderCell.swift */; };
+		1A491A8824989A19003D4DE8 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A491A8724989A19003D4DE8 /* ContainerView.swift */; };
+		1A491A8A24989ABF003D4DE8 /* BottomViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A491A8924989ABF003D4DE8 /* BottomViewOne.swift */; };
+		1A491A8C24989ACF003D4DE8 /* BottomViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A491A8B24989ACF003D4DE8 /* BottomViewTwo.swift */; };
+		1A491A912498A80A003D4DE8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A491A902498A80A003D4DE8 /* Extensions.swift */; };
+		1A57C74824BADFFF005DBD95 /* ContactsRequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A57C74724BADFFF005DBD95 /* ContactsRequestVC.swift */; };
+		1A612B2124B34498006CE224 /* ConversationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A612B2024B34498006CE224 /* ConversationsVC.swift */; };
+		1A612B2324B344B7006CE224 /* ConversationDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A612B2224B344B7006CE224 /* ConversationDetailVC.swift */; };
+		1A7452CE24C1C5D0003F32F6 /* MLNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7452CC24C1C5D0003F32F6 /* MLNotificationManager.m */; };
+		1A9F8E9124E8D2D9009156B4 /* EncryptionKeysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9F8E9024E8D2D9009156B4 /* EncryptionKeysCell.swift */; };
+		1A9F8E9324E8E3C4009156B4 /* KeysTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9F8E9224E8E3C4009156B4 /* KeysTableVC.swift */; };
+		1ABF694824B5844F007DD136 /* AESGcm.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF694624B5844F007DD136 /* AESGcm.m */; };
+		1ABF694D24B59377007DD136 /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF694C24B59377007DD136 /* ContactsVC.swift */; };
+		1ABF694F24B5D410007DD136 /* NewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF694E24B5D410007DD136 /* NewVC.swift */; };
+		1ABF695124B5DFCA007DD136 /* AddContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF695024B5DFCA007DD136 /* AddContactVC.swift */; };
+		1ABF695624B5EE91007DD136 /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF695424B5EE91007DD136 /* TextInputCell.swift */; };
+		1ABF695724B5EE91007DD136 /* TextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABF695524B5EE91007DD136 /* TextInputCell.xib */; };
+		1ADCA83E2497C05B005A45D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCA83D2497C05B005A45D5 /* AppDelegate.swift */; };
+		1ADCA8402497C05B005A45D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCA83F2497C05B005A45D5 /* SceneDelegate.swift */; };
+		1ADCA8422497C05B005A45D5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCA8412497C05B005A45D5 /* LoginVC.swift */; };
+		1ADCA8452497C05B005A45D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADCA8432497C05B005A45D5 /* Main.storyboard */; };
+		1ADCA8472497C05C005A45D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ADCA8462497C05C005A45D5 /* Assets.xcassets */; };
+		1ADCA84A2497C05C005A45D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADCA8482497C05C005A45D5 /* LaunchScreen.storyboard */; };
+		1AE4520E24E3F5F8007D38AD /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4520D24E3F5F8007D38AD /* AccountCell.swift */; };
+		1AF3818C24C46A4D00E971F1 /* AddNewContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3818B24C46A4D00E971F1 /* AddNewContactCell.swift */; };
+		1AF3818E24C46A5B00E971F1 /* ContactRequestsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3818D24C46A5B00E971F1 /* ContactRequestsCell.swift */; };
+		1AF7035924E95DEA006ABBF6 /* KeysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7035824E95DEA006ABBF6 /* KeysCell.swift */; };
+		1AF7035B24EA68D0006ABBF6 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7035A24EA68D0006ABBF6 /* ContactCell.swift */; };
+		1AFB591F24B4118D002F58F8 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB591E24B4118D002F58F8 /* UIScrollView+EmptyDataSet.m */; };
+		1AFB592524B43755002F58F8 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB592324B43755002F58F8 /* ConversationCell.swift */; };
+		1AFB592924B48F5D002F58F8 /* MLAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB592824B48F5D002F58F8 /* MLAttributedLabel.m */; };
+		1AFC690C249B2EE300583FF8 /* libjrtplib-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6909249B2EE300583FF8 /* libjrtplib-static.a */; };
+		1AFC690D249B2EF900583FF8 /* MLCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6907249B2EE200583FF8 /* MLCrypto.framework */; };
+		1AFC690E249B2EF900583FF8 /* MLCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6907249B2EE200583FF8 /* MLCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AFC690F249B2EFB00583FF8 /* monalxmpp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6908249B2EE300583FF8 /* monalxmpp.framework */; };
+		1AFC6910249B2EFB00583FF8 /* monalxmpp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6908249B2EE300583FF8 /* monalxmpp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AFC6919249B307400583FF8 /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6911249B306500583FF8 /* SAMKeychain.framework */; };
+		1AFC691A249B307400583FF8 /* SAMKeychain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6911249B306500583FF8 /* SAMKeychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AFC691B249B307500583FF8 /* SignalProtocolC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6912249B306500583FF8 /* SignalProtocolC.framework */; };
+		1AFC691C249B307500583FF8 /* SignalProtocolC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6912249B306500583FF8 /* SignalProtocolC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AFC691D249B307700583FF8 /* SignalProtocolObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6914249B306600583FF8 /* SignalProtocolObjC.framework */; };
+		1AFC691E249B307700583FF8 /* SignalProtocolObjC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6914249B306600583FF8 /* SignalProtocolObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AFC691F249B30C800583FF8 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6913249B306500583FF8 /* CocoaLumberjack.framework */; };
+		1AFC6920249B30C800583FF8 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6913249B306500583FF8 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AFC6923249B36F300583FF8 /* TPCircularBuffer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6921249B36C400583FF8 /* TPCircularBuffer.framework */; };
+		1AFC6924249B36F300583FF8 /* TPCircularBuffer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC6921249B36C400583FF8 /* TPCircularBuffer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AFFDAB224D02A8100A9BDF9 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFFDAB124D02A8100A9BDF9 /* Alert.swift */; };
+		671CAA95C0D26EE095E11809 /* Pods_ChatChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BB1839E1403EB184322223 /* Pods_ChatChat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1AFC6903249B287000583FF8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A2F65BF24AA06DD00964BE7 /* libjrtplib-static.a in Embed Frameworks */,
+				1AFC691C249B307500583FF8 /* SignalProtocolC.framework in Embed Frameworks */,
+				1AFC691E249B307700583FF8 /* SignalProtocolObjC.framework in Embed Frameworks */,
+				1AFC690E249B2EF900583FF8 /* MLCrypto.framework in Embed Frameworks */,
+				1AFC691A249B307400583FF8 /* SAMKeychain.framework in Embed Frameworks */,
+				1AFC6924249B36F300583FF8 /* TPCircularBuffer.framework in Embed Frameworks */,
+				1AFC6920249B30C800583FF8 /* CocoaLumberjack.framework in Embed Frameworks */,
+				1AFC6910249B2EFB00583FF8 /* monalxmpp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		119709DA24DAEDFA001F5256 /* sworim.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = sworim.sqlite; sourceTree = "<group>"; };
+		12BB1839E1403EB184322223 /* Pods_ChatChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A294CB024BA0C37007DB602 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		1A294CB324BA15B1007DB602 /* ResizingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingTextView.swift; sourceTree = "<group>"; };
+		1A294CB624BA16D4007DB602 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		1A294CB824BA19BE007DB602 /* ChatImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatImageCell.swift; sourceTree = "<group>"; };
+		1A294CBA24BA1C1C007DB602 /* LinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkCell.swift; sourceTree = "<group>"; };
+		1A294CBF24BA2369007DB602 /* ChatInputContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputContainer.swift; sourceTree = "<group>"; };
+		1A294CC124BA2453007DB602 /* ChatMapsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMapsCell.swift; sourceTree = "<group>"; };
+		1A294CC324BA25F3007DB602 /* ComposeMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeMessageVC.swift; sourceTree = "<group>"; };
+		1A2F6DDB24AAF58000964BE7 /* rtpudpv4transmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpudpv4transmitter.cpp; sourceTree = "<group>"; };
+		1A2F6DDC24AAF58000964BE7 /* rtpsourcedata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpsourcedata.cpp; sourceTree = "<group>"; };
+		1A2F6DDD24AAF58000964BE7 /* rtprawpacket.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtprawpacket.hh; sourceTree = "<group>"; };
+		1A2F6DDE24AAF58000964BE7 /* rtcpsdespacket.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcpsdespacket.hh; sourceTree = "<group>"; };
+		1A2F6DDF24AAF58000964BE7 /* rtcpapppacket.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcpapppacket.hh; sourceTree = "<group>"; };
+		1A2F6DE024AAF58000964BE7 /* rtcppacketbuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtcppacketbuilder.cpp; sourceTree = "<group>"; };
+		1A2F6DE124AAF58000964BE7 /* rtptypes_win.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtptypes_win.hh; sourceTree = "<group>"; };
+		1A2F6DE224AAF58000964BE7 /* rtprandomurandom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtprandomurandom.cpp; sourceTree = "<group>"; };
+		1A2F6DE324AAF58000964BE7 /* rtppollthread.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtppollthread.hh; sourceTree = "<group>"; };
+		1A2F6DE424AAF58000964BE7 /* rtcpunknownpacket.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcpunknownpacket.hh; sourceTree = "<group>"; };
+		1A2F6DE524AAF58000964BE7 /* rtcpcompoundpacketbuilder.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcpcompoundpacketbuilder.hh; sourceTree = "<group>"; };
+		1A2F6DE624AAF58000964BE7 /* rtpaddress.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpaddress.hh; sourceTree = "<group>"; };
+		1A2F6DE724AAF58000964BE7 /* rtpsession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpsession.cpp; sourceTree = "<group>"; };
+		1A2F6DE824AAF58000964BE7 /* rtcpcompoundpacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtcpcompoundpacket.cpp; sourceTree = "<group>"; };
+		1A2F6DE924AAF58000964BE7 /* rtpmemoryobject.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpmemoryobject.hh; sourceTree = "<group>"; };
+		1A2F6DEA24AAF58000964BE7 /* rtcpsrpacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtcpsrpacket.cpp; sourceTree = "<group>"; };
+		1A2F6DEB24AAF58000964BE7 /* rtcpscheduler.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcpscheduler.hh; sourceTree = "<group>"; };
+		1A2F6DEC24AAF58000964BE7 /* rtptimeutilities.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtptimeutilities.hh; sourceTree = "<group>"; };
+		1A2F6DED24AAF58000964BE7 /* rtprandom.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtprandom.hh; sourceTree = "<group>"; };
+		1A2F6DEE24AAF58000964BE7 /* rtpsession.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpsession.hh; sourceTree = "<group>"; };
+		1A2F6DEF24AAF58000964BE7 /* rtperrors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtperrors.cpp; sourceTree = "<group>"; };
+		1A2F6DF024AAF58000964BE7 /* rtpdebug.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpdebug.hh; sourceTree = "<group>"; };
+		1A2F6DF124AAF58000964BE7 /* rtcpapppacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtcpapppacket.cpp; sourceTree = "<group>"; };
+		1A2F6DF224AAF58000964BE7 /* rtpbyteaddress.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpbyteaddress.hh; sourceTree = "<group>"; };
+		1A2F6DF324AAF58000964BE7 /* rtpbyteaddress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpbyteaddress.cpp; sourceTree = "<group>"; };
+		1A2F6DF424AAF58000964BE7 /* rtpsessionparams.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpsessionparams.hh; sourceTree = "<group>"; };
+		1A2F6DF524AAF58000964BE7 /* rtpsessionsources.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpsessionsources.cpp; sourceTree = "<group>"; };
+		1A2F6DF624AAF58000964BE7 /* rtplibraryversion.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtplibraryversion.hh; sourceTree = "<group>"; };
+		1A2F6DF724AAF58000964BE7 /* rtpsources.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpsources.cpp; sourceTree = "<group>"; };
+		1A2F6DF824AAF58000964BE7 /* rtpdebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpdebug.cpp; sourceTree = "<group>"; };
+		1A2F6DF924AAF58000964BE7 /* rtpipv4address.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpipv4address.hh; sourceTree = "<group>"; };
+		1A2F6DFA24AAF58000964BE7 /* rtpcollisionlist.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpcollisionlist.hh; sourceTree = "<group>"; };
+		1A2F6DFB24AAF58000964BE7 /* rtcpscheduler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtcpscheduler.cpp; sourceTree = "<group>"; };
+		1A2F6DFC24AAF58000964BE7 /* rtpconfig.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpconfig.hh; sourceTree = "<group>"; };
+		1A2F6DFD24AAF58000964BE7 /* rtppacketbuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtppacketbuilder.cpp; sourceTree = "<group>"; };
+		1A2F6DFE24AAF58000964BE7 /* rtpipv6destination.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpipv6destination.hh; sourceTree = "<group>"; };
+		1A2F6DFF24AAF58000964BE7 /* rtpkeyhashtable.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpkeyhashtable.hh; sourceTree = "<group>"; };
+		1A2F6E0024AAF58000964BE7 /* rtpudpv6transmitter.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpudpv6transmitter.hh; sourceTree = "<group>"; };
+		1A2F6E0124AAF58000964BE7 /* rtpudpv6transmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpudpv6transmitter.cpp; sourceTree = "<group>"; };
+		1A2F6E0224AAF58000964BE7 /* rtpsessionparams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpsessionparams.cpp; sourceTree = "<group>"; };
+		1A2F6E0324AAF58000964BE7 /* rtcpsdesinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtcpsdesinfo.cpp; sourceTree = "<group>"; };
+		1A2F6E0424AAF58000964BE7 /* rtcpbyepacket.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcpbyepacket.hh; sourceTree = "<group>"; };
+		1A2F6E0524AAF58000964BE7 /* rtperrors.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtperrors.hh; sourceTree = "<group>"; };
+		1A2F6E0624AAF58000964BE7 /* rtpdefines.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpdefines.hh; sourceTree = "<group>"; };
+		1A2F6E0724AAF58000964BE7 /* rtptransmitter.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtptransmitter.hh; sourceTree = "<group>"; };
+		1A2F6E0824AAF58000964BE7 /* rtpinternalsourcedata.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpinternalsourcedata.hh; sourceTree = "<group>"; };
+		1A2F6E0924AAF58000964BE7 /* rtcprrpacket.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcprrpacket.hh; sourceTree = "<group>"; };
+		1A2F6E0A24AAF58000964BE7 /* rtcppacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtcppacket.cpp; sourceTree = "<group>"; };
+		1A2F6E0B24AAF58000964BE7 /* rtprandomrand48.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtprandomrand48.hh; sourceTree = "<group>"; };
+		1A2F6E0C24AAF58000964BE7 /* rtptypes.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtptypes.hh; sourceTree = "<group>"; };
+		1A2F6E0D24AAF58000964BE7 /* rtprandomrands.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtprandomrands.cpp; sourceTree = "<group>"; };
+		1A2F6E0E24AAF58000964BE7 /* rtcpsdesinfo.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcpsdesinfo.hh; sourceTree = "<group>"; };
+		1A2F6E0F24AAF58000964BE7 /* rtcprrpacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtcprrpacket.cpp; sourceTree = "<group>"; };
+		1A2F6E1024AAF58000964BE7 /* rtpexternaltransmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpexternaltransmitter.cpp; sourceTree = "<group>"; };
+		1A2F6E1124AAF58000964BE7 /* rtcppacketbuilder.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcppacketbuilder.hh; sourceTree = "<group>"; };
+		1A2F6E1224AAF58000964BE7 /* rtptimeutilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtptimeutilities.cpp; sourceTree = "<group>"; };
+		1A2F6E1324AAF58000964BE7 /* rtcpcompoundpacket.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcpcompoundpacket.hh; sourceTree = "<group>"; };
+		1A2F6E1424AAF58000964BE7 /* rtpstructs.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpstructs.hh; sourceTree = "<group>"; };
+		1A2F6E1524AAF58000964BE7 /* rtpudpv4transmitter.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpudpv4transmitter.hh; sourceTree = "<group>"; };
+		1A2F6E1624AAF58000964BE7 /* rtpsessionsources.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpsessionsources.hh; sourceTree = "<group>"; };
+		1A2F6E1724AAF58000964BE7 /* rtpsources.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpsources.hh; sourceTree = "<group>"; };
+		1A2F6E1824AAF58000964BE7 /* rtpipv4destination.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpipv4destination.hh; sourceTree = "<group>"; };
+		1A2F6E1924AAF58000964BE7 /* rtprandomrands.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtprandomrands.hh; sourceTree = "<group>"; };
+		1A2F6E1A24AAF58000964BE7 /* rtcpbyepacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtcpbyepacket.cpp; sourceTree = "<group>"; };
+		1A2F6E1B24AAF58000964BE7 /* rtpinternalsourcedata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpinternalsourcedata.cpp; sourceTree = "<group>"; };
+		1A2F6E1C24AAF58000964BE7 /* rtpipv6address.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpipv6address.cpp; sourceTree = "<group>"; };
+		1A2F6E1D24AAF58000964BE7 /* rtprandomrand48.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtprandomrand48.cpp; sourceTree = "<group>"; };
+		1A2F6E1E24AAF58000964BE7 /* rtphashtable.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtphashtable.hh; sourceTree = "<group>"; };
+		1A2F6E1F24AAF58000964BE7 /* rtcppacket.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcppacket.hh; sourceTree = "<group>"; };
+		1A2F6E2024AAF58000964BE7 /* rtppacketbuilder.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtppacketbuilder.hh; sourceTree = "<group>"; };
+		1A2F6E2124AAF58000964BE7 /* rtpmemorymanager.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpmemorymanager.hh; sourceTree = "<group>"; };
+		1A2F6E2224AAF58000964BE7 /* rtcpsrpacket.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcpsrpacket.hh; sourceTree = "<group>"; };
+		1A2F6E2324AAF58000964BE7 /* rtpipv6address.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpipv6address.hh; sourceTree = "<group>"; };
+		1A2F6E2424AAF58000964BE7 /* rtprandom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtprandom.cpp; sourceTree = "<group>"; };
+		1A2F6E2524AAF58000964BE7 /* rtcpsdespacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtcpsdespacket.cpp; sourceTree = "<group>"; };
+		1A2F6E2624AAF58000964BE7 /* rtpcollisionlist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpcollisionlist.cpp; sourceTree = "<group>"; };
+		1A2F6E2724AAF58000964BE7 /* rtplibraryversion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtplibraryversion.cpp; sourceTree = "<group>"; };
+		1A2F6E2824AAF58000964BE7 /* rtcpcompoundpacketbuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtcpcompoundpacketbuilder.cpp; sourceTree = "<group>"; };
+		1A2F6E2924AAF58000964BE7 /* rtpexternaltransmitter.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpexternaltransmitter.hh; sourceTree = "<group>"; };
+		1A2F6E2A24AAF58000964BE7 /* rtppacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtppacket.cpp; sourceTree = "<group>"; };
+		1A2F6E2B24AAF58000964BE7 /* rtpsourcedata.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtpsourcedata.hh; sourceTree = "<group>"; };
+		1A2F6E2C24AAF58000964BE7 /* rtppollthread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtppollthread.cpp; sourceTree = "<group>"; };
+		1A2F6E2D24AAF58000964BE7 /* rtprandomurandom.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtprandomurandom.hh; sourceTree = "<group>"; };
+		1A2F6E2E24AAF58000964BE7 /* rtpipv4address.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtpipv4address.cpp; sourceTree = "<group>"; };
+		1A2F6E2F24AAF58000964BE7 /* rtppacket.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtppacket.hh; sourceTree = "<group>"; };
+		1A3A07BF24E6D4220085FB05 /* ContactDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsVC.swift; sourceTree = "<group>"; };
+		1A3A07C124E6D4480085FB05 /* ContactDetailHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailHeaderCell.swift; sourceTree = "<group>"; };
+		1A491A8724989A19003D4DE8 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		1A491A8924989ABF003D4DE8 /* BottomViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewOne.swift; sourceTree = "<group>"; };
+		1A491A8B24989ACF003D4DE8 /* BottomViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewTwo.swift; sourceTree = "<group>"; };
+		1A491A902498A80A003D4DE8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1A57C74724BADFFF005DBD95 /* ContactsRequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsRequestVC.swift; sourceTree = "<group>"; };
+		1A612B2024B34498006CE224 /* ConversationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsVC.swift; sourceTree = "<group>"; };
+		1A612B2224B344B7006CE224 /* ConversationDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationDetailVC.swift; sourceTree = "<group>"; };
+		1A67D95924A9F0DF00372EC3 /* ChatChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A7452CC24C1C5D0003F32F6 /* MLNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNotificationManager.m; sourceTree = "<group>"; };
+		1A7452CD24C1C5D0003F32F6 /* MLNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNotificationManager.h; sourceTree = "<group>"; };
+		1A7452CF24C1C6A1003F32F6 /* MLConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLConstants.h; sourceTree = "<group>"; };
+		1A9F8E9024E8D2D9009156B4 /* EncryptionKeysCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionKeysCell.swift; sourceTree = "<group>"; };
+		1A9F8E9224E8E3C4009156B4 /* KeysTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysTableVC.swift; sourceTree = "<group>"; };
+		1ABF694624B5844F007DD136 /* AESGcm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESGcm.m; sourceTree = "<group>"; };
+		1ABF694724B5844F007DD136 /* AESGcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESGcm.h; sourceTree = "<group>"; };
+		1ABF694C24B59377007DD136 /* ContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
+		1ABF694E24B5D410007DD136 /* NewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVC.swift; sourceTree = "<group>"; };
+		1ABF695024B5DFCA007DD136 /* AddContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactVC.swift; sourceTree = "<group>"; };
+		1ABF695424B5EE91007DD136 /* TextInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputCell.swift; sourceTree = "<group>"; };
+		1ABF695524B5EE91007DD136 /* TextInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputCell.xib; sourceTree = "<group>"; };
+		1ACD2C5F24A0650300D5079D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1ADCA83A2497C05B005A45D5 /* ChatChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADCA83D2497C05B005A45D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1ADCA83F2497C05B005A45D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1ADCA8412497C05B005A45D5 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		1ADCA8442497C05B005A45D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1ADCA8462497C05C005A45D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ADCA8492497C05C005A45D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1ADCA84B2497C05C005A45D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AE4520D24E3F5F8007D38AD /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		1AF3818B24C46A4D00E971F1 /* AddNewContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactCell.swift; sourceTree = "<group>"; };
+		1AF3818D24C46A5B00E971F1 /* ContactRequestsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRequestsCell.swift; sourceTree = "<group>"; };
+		1AF7035824E95DEA006ABBF6 /* KeysCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysCell.swift; sourceTree = "<group>"; };
+		1AF7035A24EA68D0006ABBF6 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		1AFB591D24B4118D002F58F8 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		1AFB591E24B4118D002F58F8 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		1AFB592324B43755002F58F8 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		1AFB592724B48F5D002F58F8 /* MLAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLAttributedLabel.h; sourceTree = "<group>"; };
+		1AFB592824B48F5D002F58F8 /* MLAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLAttributedLabel.m; sourceTree = "<group>"; };
+		1AFC6907249B2EE200583FF8 /* MLCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MLCrypto.framework; sourceTree = "<group>"; };
+		1AFC6908249B2EE300583FF8 /* monalxmpp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = monalxmpp.framework; sourceTree = "<group>"; };
+		1AFC6909249B2EE300583FF8 /* libjrtplib-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libjrtplib-static.a"; sourceTree = "<group>"; };
+		1AFC6911249B306500583FF8 /* SAMKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAMKeychain.framework; sourceTree = "<group>"; };
+		1AFC6912249B306500583FF8 /* SignalProtocolC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SignalProtocolC.framework; sourceTree = "<group>"; };
+		1AFC6913249B306500583FF8 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = "<group>"; };
+		1AFC6914249B306600583FF8 /* SignalProtocolObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SignalProtocolObjC.framework; sourceTree = "<group>"; };
+		1AFC6921249B36C400583FF8 /* TPCircularBuffer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPCircularBuffer.framework; sourceTree = "<group>"; };
+		1AFFDAB124D02A8100A9BDF9 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		26784CEABE8580E53BCC9EFD /* Pods-ChatChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatChat.debug.xcconfig"; path = "Target Support Files/Pods-ChatChat/Pods-ChatChat.debug.xcconfig"; sourceTree = "<group>"; };
+		5F69D0402FD9DCB958EDC26B /* Pods-ChatChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatChat.release.xcconfig"; path = "Target Support Files/Pods-ChatChat/Pods-ChatChat.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ADCA8372497C05B005A45D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AFC690C249B2EE300583FF8 /* libjrtplib-static.a in Frameworks */,
+				1AFC6919249B307400583FF8 /* SAMKeychain.framework in Frameworks */,
+				1AFC6923249B36F300583FF8 /* TPCircularBuffer.framework in Frameworks */,
+				1AFC691D249B307700583FF8 /* SignalProtocolObjC.framework in Frameworks */,
+				1AFC690D249B2EF900583FF8 /* MLCrypto.framework in Frameworks */,
+				1AFC690F249B2EFB00583FF8 /* monalxmpp.framework in Frameworks */,
+				1AFC691F249B30C800583FF8 /* CocoaLumberjack.framework in Frameworks */,
+				1AFC691B249B307500583FF8 /* SignalProtocolC.framework in Frameworks */,
+				671CAA95C0D26EE095E11809 /* Pods_ChatChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		119709D924DAEDE5001F5256 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				119709DA24DAEDFA001F5256 /* sworim.sqlite */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A294CAF24BA0145007DB602 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1A294CB024BA0C37007DB602 /* BaseCell.swift */,
+				1AF3818B24C46A4D00E971F1 /* AddNewContactCell.swift */,
+				1AF3818D24C46A5B00E971F1 /* ContactRequestsCell.swift */,
+				1A3A07C124E6D4480085FB05 /* ContactDetailHeaderCell.swift */,
+				1A9F8E9024E8D2D9009156B4 /* EncryptionKeysCell.swift */,
+				1AF7035824E95DEA006ABBF6 /* KeysCell.swift */,
+				1AF7035A24EA68D0006ABBF6 /* ContactCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		1A294CB224BA158B007DB602 /* TextViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1A294CB324BA15B1007DB602 /* ResizingTextView.swift */,
+			);
+			path = TextViewCell;
+			sourceTree = "<group>";
+		};
+		1A294CB524BA16C0007DB602 /* ChildrenOfBaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				1A294CB624BA16D4007DB602 /* ChatCell.swift */,
+				1A294CB824BA19BE007DB602 /* ChatImageCell.swift */,
+				1A294CBA24BA1C1C007DB602 /* LinkCell.swift */,
+				1A294CC124BA2453007DB602 /* ChatMapsCell.swift */,
+			);
+			path = ChildrenOfBaseCell;
+			sourceTree = "<group>";
+		};
+		1A2F6DD924AAF50D00964BE7 /* ExternalLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				1A2F6DDA24AAF58000964BE7 /* jrtplib */,
+			);
+			path = ExternalLibraries;
+			sourceTree = "<group>";
+		};
+		1A2F6DDA24AAF58000964BE7 /* jrtplib */ = {
+			isa = PBXGroup;
+			children = (
+				1A2F6DDB24AAF58000964BE7 /* rtpudpv4transmitter.cpp */,
+				1A2F6DDC24AAF58000964BE7 /* rtpsourcedata.cpp */,
+				1A2F6DDD24AAF58000964BE7 /* rtprawpacket.hh */,
+				1A2F6DDE24AAF58000964BE7 /* rtcpsdespacket.hh */,
+				1A2F6DDF24AAF58000964BE7 /* rtcpapppacket.hh */,
+				1A2F6DE024AAF58000964BE7 /* rtcppacketbuilder.cpp */,
+				1A2F6DE124AAF58000964BE7 /* rtptypes_win.hh */,
+				1A2F6DE224AAF58000964BE7 /* rtprandomurandom.cpp */,
+				1A2F6DE324AAF58000964BE7 /* rtppollthread.hh */,
+				1A2F6DE424AAF58000964BE7 /* rtcpunknownpacket.hh */,
+				1A2F6DE524AAF58000964BE7 /* rtcpcompoundpacketbuilder.hh */,
+				1A2F6DE624AAF58000964BE7 /* rtpaddress.hh */,
+				1A2F6DE724AAF58000964BE7 /* rtpsession.cpp */,
+				1A2F6DE824AAF58000964BE7 /* rtcpcompoundpacket.cpp */,
+				1A2F6DE924AAF58000964BE7 /* rtpmemoryobject.hh */,
+				1A2F6DEA24AAF58000964BE7 /* rtcpsrpacket.cpp */,
+				1A2F6DEB24AAF58000964BE7 /* rtcpscheduler.hh */,
+				1A2F6DEC24AAF58000964BE7 /* rtptimeutilities.hh */,
+				1A2F6DED24AAF58000964BE7 /* rtprandom.hh */,
+				1A2F6DEE24AAF58000964BE7 /* rtpsession.hh */,
+				1A2F6DEF24AAF58000964BE7 /* rtperrors.cpp */,
+				1A2F6DF024AAF58000964BE7 /* rtpdebug.hh */,
+				1A2F6DF124AAF58000964BE7 /* rtcpapppacket.cpp */,
+				1A2F6DF224AAF58000964BE7 /* rtpbyteaddress.hh */,
+				1A2F6DF324AAF58000964BE7 /* rtpbyteaddress.cpp */,
+				1A2F6DF424AAF58000964BE7 /* rtpsessionparams.hh */,
+				1A2F6DF524AAF58000964BE7 /* rtpsessionsources.cpp */,
+				1A2F6DF624AAF58000964BE7 /* rtplibraryversion.hh */,
+				1A2F6DF724AAF58000964BE7 /* rtpsources.cpp */,
+				1A2F6DF824AAF58000964BE7 /* rtpdebug.cpp */,
+				1A2F6DF924AAF58000964BE7 /* rtpipv4address.hh */,
+				1A2F6DFA24AAF58000964BE7 /* rtpcollisionlist.hh */,
+				1A2F6DFB24AAF58000964BE7 /* rtcpscheduler.cpp */,
+				1A2F6DFC24AAF58000964BE7 /* rtpconfig.hh */,
+				1A2F6DFD24AAF58000964BE7 /* rtppacketbuilder.cpp */,
+				1A2F6DFE24AAF58000964BE7 /* rtpipv6destination.hh */,
+				1A2F6DFF24AAF58000964BE7 /* rtpkeyhashtable.hh */,
+				1A2F6E0024AAF58000964BE7 /* rtpudpv6transmitter.hh */,
+				1A2F6E0124AAF58000964BE7 /* rtpudpv6transmitter.cpp */,
+				1A2F6E0224AAF58000964BE7 /* rtpsessionparams.cpp */,
+				1A2F6E0324AAF58000964BE7 /* rtcpsdesinfo.cpp */,
+				1A2F6E0424AAF58000964BE7 /* rtcpbyepacket.hh */,
+				1A2F6E0524AAF58000964BE7 /* rtperrors.hh */,
+				1A2F6E0624AAF58000964BE7 /* rtpdefines.hh */,
+				1A2F6E0724AAF58000964BE7 /* rtptransmitter.hh */,
+				1A2F6E0824AAF58000964BE7 /* rtpinternalsourcedata.hh */,
+				1A2F6E0924AAF58000964BE7 /* rtcprrpacket.hh */,
+				1A2F6E0A24AAF58000964BE7 /* rtcppacket.cpp */,
+				1A2F6E0B24AAF58000964BE7 /* rtprandomrand48.hh */,
+				1A2F6E0C24AAF58000964BE7 /* rtptypes.hh */,
+				1A2F6E0D24AAF58000964BE7 /* rtprandomrands.cpp */,
+				1A2F6E0E24AAF58000964BE7 /* rtcpsdesinfo.hh */,
+				1A2F6E0F24AAF58000964BE7 /* rtcprrpacket.cpp */,
+				1A2F6E1024AAF58000964BE7 /* rtpexternaltransmitter.cpp */,
+				1A2F6E1124AAF58000964BE7 /* rtcppacketbuilder.hh */,
+				1A2F6E1224AAF58000964BE7 /* rtptimeutilities.cpp */,
+				1A2F6E1324AAF58000964BE7 /* rtcpcompoundpacket.hh */,
+				1A2F6E1424AAF58000964BE7 /* rtpstructs.hh */,
+				1A2F6E1524AAF58000964BE7 /* rtpudpv4transmitter.hh */,
+				1A2F6E1624AAF58000964BE7 /* rtpsessionsources.hh */,
+				1A2F6E1724AAF58000964BE7 /* rtpsources.hh */,
+				1A2F6E1824AAF58000964BE7 /* rtpipv4destination.hh */,
+				1A2F6E1924AAF58000964BE7 /* rtprandomrands.hh */,
+				1A2F6E1A24AAF58000964BE7 /* rtcpbyepacket.cpp */,
+				1A2F6E1B24AAF58000964BE7 /* rtpinternalsourcedata.cpp */,
+				1A2F6E1C24AAF58000964BE7 /* rtpipv6address.cpp */,
+				1A2F6E1D24AAF58000964BE7 /* rtprandomrand48.cpp */,
+				1A2F6E1E24AAF58000964BE7 /* rtphashtable.hh */,
+				1A2F6E1F24AAF58000964BE7 /* rtcppacket.hh */,
+				1A2F6E2024AAF58000964BE7 /* rtppacketbuilder.hh */,
+				1A2F6E2124AAF58000964BE7 /* rtpmemorymanager.hh */,
+				1A2F6E2224AAF58000964BE7 /* rtcpsrpacket.hh */,
+				1A2F6E2324AAF58000964BE7 /* rtpipv6address.hh */,
+				1A2F6E2424AAF58000964BE7 /* rtprandom.cpp */,
+				1A2F6E2524AAF58000964BE7 /* rtcpsdespacket.cpp */,
+				1A2F6E2624AAF58000964BE7 /* rtpcollisionlist.cpp */,
+				1A2F6E2724AAF58000964BE7 /* rtplibraryversion.cpp */,
+				1A2F6E2824AAF58000964BE7 /* rtcpcompoundpacketbuilder.cpp */,
+				1A2F6E2924AAF58000964BE7 /* rtpexternaltransmitter.hh */,
+				1A2F6E2A24AAF58000964BE7 /* rtppacket.cpp */,
+				1A2F6E2B24AAF58000964BE7 /* rtpsourcedata.hh */,
+				1A2F6E2C24AAF58000964BE7 /* rtppollthread.cpp */,
+				1A2F6E2D24AAF58000964BE7 /* rtprandomurandom.hh */,
+				1A2F6E2E24AAF58000964BE7 /* rtpipv4address.cpp */,
+				1A2F6E2F24AAF58000964BE7 /* rtppacket.hh */,
+			);
+			path = jrtplib;
+			sourceTree = "<group>";
+		};
+		1A361A30249A355A004FD8E0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1A491A86249899F6003D4DE8 /* GenericViews */ = {
+			isa = PBXGroup;
+			children = (
+				1A491A8724989A19003D4DE8 /* ContainerView.swift */,
+				1A491A8924989ABF003D4DE8 /* BottomViewOne.swift */,
+				1A491A8B24989ACF003D4DE8 /* BottomViewTwo.swift */,
+			);
+			path = GenericViews;
+			sourceTree = "<group>";
+		};
+		1A491A8E2498A7D6003D4DE8 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1A2F6DD924AAF50D00964BE7 /* ExternalLibraries */,
+				1AAE436E24A8AA630017B578 /* ObjecCFiles */,
+				1A361A30249A355A004FD8E0 /* Services */,
+				1A491A8F2498A7E1003D4DE8 /* Utilities */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		1A491A8F2498A7E1003D4DE8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1A491A902498A80A003D4DE8 /* Extensions.swift */,
+				1AFFDAB124D02A8100A9BDF9 /* Alert.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1A8C343124ACA16200479C36 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1A7452CF24C1C6A1003F32F6 /* MLConstants.h */,
+				1A7452CD24C1C5D0003F32F6 /* MLNotificationManager.h */,
+				1A7452CC24C1C5D0003F32F6 /* MLNotificationManager.m */,
+				1ABF694724B5844F007DD136 /* AESGcm.h */,
+				1ABF694624B5844F007DD136 /* AESGcm.m */,
+				1AFB592724B48F5D002F58F8 /* MLAttributedLabel.h */,
+				1AFB592824B48F5D002F58F8 /* MLAttributedLabel.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1AAE436E24A8AA630017B578 /* ObjecCFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1AFB591C24B41173002F58F8 /* DZEmptyDataSet */,
+				1A67D95924A9F0DF00372EC3 /* ChatChat-Bridging-Header.h */,
+				1A8C343124ACA16200479C36 /* Classes */,
+			);
+			path = ObjecCFiles;
+			sourceTree = "<group>";
+		};
+		1ACD2C5E24A0650300D5079D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1ACD2C5F24A0650300D5079D /* libsqlite3.tbd */,
+				12BB1839E1403EB184322223 /* Pods_ChatChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1ADCA8312497C05B005A45D5 = {
+			isa = PBXGroup;
+			children = (
+				1AFC6921249B36C400583FF8 /* TPCircularBuffer.framework */,
+				1AFC6913249B306500583FF8 /* CocoaLumberjack.framework */,
+				1AFC6911249B306500583FF8 /* SAMKeychain.framework */,
+				1AFC6912249B306500583FF8 /* SignalProtocolC.framework */,
+				1AFC6914249B306600583FF8 /* SignalProtocolObjC.framework */,
+				1AFC6909249B2EE300583FF8 /* libjrtplib-static.a */,
+				1AFC6907249B2EE200583FF8 /* MLCrypto.framework */,
+				1AFC6908249B2EE300583FF8 /* monalxmpp.framework */,
+				1ADCA83C2497C05B005A45D5 /* ChatChat */,
+				1ADCA83B2497C05B005A45D5 /* Products */,
+				1ACD2C5E24A0650300D5079D /* Frameworks */,
+				62C12BAFE3A9CE553978D814 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		1ADCA83B2497C05B005A45D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCA83A2497C05B005A45D5 /* ChatChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ADCA83C2497C05B005A45D5 /* ChatChat */ = {
+			isa = PBXGroup;
+			children = (
+				119709D924DAEDE5001F5256 /* Resources */,
+				1A491A8E2498A7D6003D4DE8 /* SupportingFiles */,
+				1ADCA8512497C083005A45D5 /* SystemDesign */,
+				1ADCA83D2497C05B005A45D5 /* AppDelegate.swift */,
+				1ADCA83F2497C05B005A45D5 /* SceneDelegate.swift */,
+				1ADCA8462497C05C005A45D5 /* Assets.xcassets */,
+				1ADCA8482497C05C005A45D5 /* LaunchScreen.storyboard */,
+				1ADCA84B2497C05C005A45D5 /* Info.plist */,
+			);
+			path = ChatChat;
+			sourceTree = "<group>";
+		};
+		1ADCA8512497C083005A45D5 /* SystemDesign */ = {
+			isa = PBXGroup;
+			children = (
+				1AFB592024B434E2002F58F8 /* GlobalViews */,
+				1ADCA8532497C0B9005A45D5 /* Login */,
+				1ADCA8522497C0B3005A45D5 /* Messaging */,
+			);
+			path = SystemDesign;
+			sourceTree = "<group>";
+		};
+		1ADCA8522497C0B3005A45D5 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCA8572497C0D9005A45D5 /* Model */,
+				1ADCA8592497C0D9005A45D5 /* View */,
+				1ADCA8582497C0D9005A45D5 /* Controller */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		1ADCA8532497C0B9005A45D5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCA8562497C0D0005A45D5 /* Model */,
+				1ADCA8552497C0CC005A45D5 /* View */,
+				1ADCA8542497C0C6005A45D5 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1ADCA8542497C0C6005A45D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCA8412497C05B005A45D5 /* LoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1ADCA8552497C0CC005A45D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A491A86249899F6003D4DE8 /* GenericViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1ADCA8562497C0D0005A45D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1ADCA8572497C0D9005A45D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1ADCA8582497C0D9005A45D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A612B2024B34498006CE224 /* ConversationsVC.swift */,
+				1A612B2224B344B7006CE224 /* ConversationDetailVC.swift */,
+				1ABF694C24B59377007DD136 /* ContactsVC.swift */,
+				1ABF694E24B5D410007DD136 /* NewVC.swift */,
+				1ABF695024B5DFCA007DD136 /* AddContactVC.swift */,
+				1A294CC324BA25F3007DB602 /* ComposeMessageVC.swift */,
+				1A57C74724BADFFF005DBD95 /* ContactsRequestVC.swift */,
+				1A3A07BF24E6D4220085FB05 /* ContactDetailsVC.swift */,
+				1A9F8E9224E8E3C4009156B4 /* KeysTableVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1ADCA8592497C0D9005A45D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A294CB524BA16C0007DB602 /* ChildrenOfBaseCell */,
+				1A294CB224BA158B007DB602 /* TextViewCell */,
+				1A294CAF24BA0145007DB602 /* TableViewCells */,
+				1A294CBF24BA2369007DB602 /* ChatInputContainer.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AFB591C24B41173002F58F8 /* DZEmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				1AFB591D24B4118D002F58F8 /* UIScrollView+EmptyDataSet.h */,
+				1AFB591E24B4118D002F58F8 /* UIScrollView+EmptyDataSet.m */,
+			);
+			path = DZEmptyDataSet;
+			sourceTree = "<group>";
+		};
+		1AFB592024B434E2002F58F8 /* GlobalViews */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCA8432497C05B005A45D5 /* Main.storyboard */,
+				1AFB592324B43755002F58F8 /* ConversationCell.swift */,
+				1ABF695424B5EE91007DD136 /* TextInputCell.swift */,
+				1ABF695524B5EE91007DD136 /* TextInputCell.xib */,
+				1AE4520D24E3F5F8007D38AD /* AccountCell.swift */,
+			);
+			path = GlobalViews;
+			sourceTree = "<group>";
+		};
+		62C12BAFE3A9CE553978D814 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26784CEABE8580E53BCC9EFD /* Pods-ChatChat.debug.xcconfig */,
+				5F69D0402FD9DCB958EDC26B /* Pods-ChatChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ADCA8392497C05B005A45D5 /* ChatChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADCA84E2497C05C005A45D5 /* Build configuration list for PBXNativeTarget "ChatChat" */;
+			buildPhases = (
+				02DE70A679102AF029ACDD2B /* [CP] Check Pods Manifest.lock */,
+				1ADCA8362497C05B005A45D5 /* Sources */,
+				1ADCA8372497C05B005A45D5 /* Frameworks */,
+				1ADCA8382497C05B005A45D5 /* Resources */,
+				1AFC6903249B287000583FF8 /* Embed Frameworks */,
+				8DACDCF15731A5AD81347EEA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatChat;
+			productName = ChatChat;
+			productReference = 1ADCA83A2497C05B005A45D5 /* ChatChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ADCA8322497C05B005A45D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Wheels-Corporation";
+				TargetAttributes = {
+					1ADCA8392497C05B005A45D5 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+				};
+			};
+			buildConfigurationList = 1ADCA8352497C05B005A45D5 /* Build configuration list for PBXProject "ChatChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1ADCA8312497C05B005A45D5;
+			productRefGroup = 1ADCA83B2497C05B005A45D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ADCA8392497C05B005A45D5 /* ChatChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ADCA8382497C05B005A45D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119709DB24DAEDFA001F5256 /* sworim.sqlite in Resources */,
+				1ADCA84A2497C05C005A45D5 /* LaunchScreen.storyboard in Resources */,
+				1ADCA8472497C05C005A45D5 /* Assets.xcassets in Resources */,
+				1ADCA8452497C05B005A45D5 /* Main.storyboard in Resources */,
+				1ABF695724B5EE91007DD136 /* TextInputCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02DE70A679102AF029ACDD2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DACDCF15731A5AD81347EEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatChat/Pods-ChatChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatChat/Pods-ChatChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatChat/Pods-ChatChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ADCA8362497C05B005A45D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF7035B24EA68D0006ABBF6 /* ContactCell.swift in Sources */,
+				1A612B2324B344B7006CE224 /* ConversationDetailVC.swift in Sources */,
+				1A3A07C024E6D4220085FB05 /* ContactDetailsVC.swift in Sources */,
+				1A294CB924BA19BE007DB602 /* ChatImageCell.swift in Sources */,
+				1A2F6E3F24AAF58100964BE7 /* rtpudpv6transmitter.cpp in Sources */,
+				1A491A8824989A19003D4DE8 /* ContainerView.swift in Sources */,
+				1A7452CE24C1C5D0003F32F6 /* MLNotificationManager.m in Sources */,
+				1A2F6E4024AAF58100964BE7 /* rtpsessionparams.cpp in Sources */,
+				1A2F6E4724AAF58100964BE7 /* rtcpbyepacket.cpp in Sources */,
+				1AF7035924E95DEA006ABBF6 /* KeysCell.swift in Sources */,
+				1A2F6E4624AAF58100964BE7 /* rtptimeutilities.cpp in Sources */,
+				1A2F6E4E24AAF58100964BE7 /* rtplibraryversion.cpp in Sources */,
+				1A2F6E3424AAF58000964BE7 /* rtpsession.cpp in Sources */,
+				1A2F6E3A24AAF58000964BE7 /* rtpsessionsources.cpp in Sources */,
+				1A2F6E4424AAF58100964BE7 /* rtcprrpacket.cpp in Sources */,
+				1A2F6E5024AAF58100964BE7 /* rtppacket.cpp in Sources */,
+				1AF3818E24C46A5B00E971F1 /* ContactRequestsCell.swift in Sources */,
+				1A2F6E3724AAF58000964BE7 /* rtperrors.cpp in Sources */,
+				1A2F6E4A24AAF58100964BE7 /* rtprandomrand48.cpp in Sources */,
+				1A294CB724BA16D4007DB602 /* ChatCell.swift in Sources */,
+				1A2F6E3124AAF58000964BE7 /* rtpsourcedata.cpp in Sources */,
+				1AFFDAB224D02A8100A9BDF9 /* Alert.swift in Sources */,
+				1ADCA8422497C05B005A45D5 /* LoginVC.swift in Sources */,
+				1ADCA83E2497C05B005A45D5 /* AppDelegate.swift in Sources */,
+				1A57C74824BADFFF005DBD95 /* ContactsRequestVC.swift in Sources */,
+				1A2F6E3D24AAF58000964BE7 /* rtcpscheduler.cpp in Sources */,
+				1A2F6E5124AAF58100964BE7 /* rtppollthread.cpp in Sources */,
+				1A9F8E9124E8D2D9009156B4 /* EncryptionKeysCell.swift in Sources */,
+				1A2F6E4924AAF58100964BE7 /* rtpipv6address.cpp in Sources */,
+				1A491A8A24989ABF003D4DE8 /* BottomViewOne.swift in Sources */,
+				1AFB592524B43755002F58F8 /* ConversationCell.swift in Sources */,
+				1A2F6E3224AAF58000964BE7 /* rtcppacketbuilder.cpp in Sources */,
+				1A2F6E4B24AAF58100964BE7 /* rtprandom.cpp in Sources */,
+				1A491A8C24989ACF003D4DE8 /* BottomViewTwo.swift in Sources */,
+				1A2F6E3824AAF58000964BE7 /* rtcpapppacket.cpp in Sources */,
+				1A2F6E4D24AAF58100964BE7 /* rtpcollisionlist.cpp in Sources */,
+				1A2F6E4224AAF58100964BE7 /* rtcppacket.cpp in Sources */,
+				1A2F6E3B24AAF58000964BE7 /* rtpsources.cpp in Sources */,
+				1ABF695124B5DFCA007DD136 /* AddContactVC.swift in Sources */,
+				1A294CC024BA2369007DB602 /* ChatInputContainer.swift in Sources */,
+				1A2F6E5224AAF58100964BE7 /* rtpipv4address.cpp in Sources */,
+				1A294CC224BA2453007DB602 /* ChatMapsCell.swift in Sources */,
+				1ADCA8402497C05B005A45D5 /* SceneDelegate.swift in Sources */,
+				1A2F6E3624AAF58000964BE7 /* rtcpsrpacket.cpp in Sources */,
+				1A294CB124BA0C37007DB602 /* BaseCell.swift in Sources */,
+				1A2F6E4324AAF58100964BE7 /* rtprandomrands.cpp in Sources */,
+				1ABF694824B5844F007DD136 /* AESGcm.m in Sources */,
+				1A294CC424BA25F3007DB602 /* ComposeMessageVC.swift in Sources */,
+				1ABF694F24B5D410007DD136 /* NewVC.swift in Sources */,
+				1A2F6E3C24AAF58000964BE7 /* rtpdebug.cpp in Sources */,
+				1A2F6E3024AAF58000964BE7 /* rtpudpv4transmitter.cpp in Sources */,
+				1A294CB424BA15B1007DB602 /* ResizingTextView.swift in Sources */,
+				1A2F6E3524AAF58000964BE7 /* rtcpcompoundpacket.cpp in Sources */,
+				1AFB591F24B4118D002F58F8 /* UIScrollView+EmptyDataSet.m in Sources */,
+				1AF3818C24C46A4D00E971F1 /* AddNewContactCell.swift in Sources */,
+				1ABF695624B5EE91007DD136 /* TextInputCell.swift in Sources */,
+				1A294CBB24BA1C1C007DB602 /* LinkCell.swift in Sources */,
+				1AE4520E24E3F5F8007D38AD /* AccountCell.swift in Sources */,
+				1AFB592924B48F5D002F58F8 /* MLAttributedLabel.m in Sources */,
+				1A2F6E4524AAF58100964BE7 /* rtpexternaltransmitter.cpp in Sources */,
+				1A2F6E4C24AAF58100964BE7 /* rtcpsdespacket.cpp in Sources */,
+				1A9F8E9324E8E3C4009156B4 /* KeysTableVC.swift in Sources */,
+				1A612B2124B34498006CE224 /* ConversationsVC.swift in Sources */,
+				1A2F6E4124AAF58100964BE7 /* rtcpsdesinfo.cpp in Sources */,
+				1A2F6E4F24AAF58100964BE7 /* rtcpcompoundpacketbuilder.cpp in Sources */,
+				1A491A912498A80A003D4DE8 /* Extensions.swift in Sources */,
+				1A2F6E3924AAF58000964BE7 /* rtpbyteaddress.cpp in Sources */,
+				1A2F6E3324AAF58000964BE7 /* rtprandomurandom.cpp in Sources */,
+				1A3A07C224E6D4480085FB05 /* ContactDetailHeaderCell.swift in Sources */,
+				1A2F6E4824AAF58100964BE7 /* rtpinternalsourcedata.cpp in Sources */,
+				1ABF694D24B59377007DD136 /* ContactsVC.swift in Sources */,
+				1A2F6E3E24AAF58000964BE7 /* rtppacketbuilder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1ADCA8432497C05B005A45D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ADCA8442497C05B005A45D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1ADCA8482497C05C005A45D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ADCA8492497C05C005A45D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1ADCA84C2497C05C005A45D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1ADCA84D2497C05C005A45D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1ADCA84F2497C05C005A45D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26784CEABE8580E53BCC9EFD /* Pods-ChatChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8DV2R8BQ8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ChatChat/SupportingFiles/Monal/Pods/Crashlytics",
+					"$(PROJECT_DIR)/ChatChat/SupportingFiles/Monal/Pods/Crashlytics/iOS",
+					"$(PROJECT_DIR)/ChatChat/SupportingFiles/Monal/Pods/Fabric",
+					"$(PROJECT_DIR)/ChatChat/SupportingFiles/Monal/Pods/Fabric/iOS",
+				);
+				INFOPLIST_FILE = ChatChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ChatChat/SupportingFiles/Monal/Pods/OpenSSL-Universal/ios/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wheels.ChatChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/ChatChat/SupportingFiles/ObjecCFiles/ChatChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1ADCA8502497C05C005A45D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F69D0402FD9DCB958EDC26B /* Pods-ChatChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8DV2R8BQ8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ChatChat/SupportingFiles/Monal/Pods/Crashlytics",
+					"$(PROJECT_DIR)/ChatChat/SupportingFiles/Monal/Pods/Crashlytics/iOS",
+					"$(PROJECT_DIR)/ChatChat/SupportingFiles/Monal/Pods/Fabric",
+					"$(PROJECT_DIR)/ChatChat/SupportingFiles/Monal/Pods/Fabric/iOS",
+				);
+				INFOPLIST_FILE = ChatChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ChatChat/SupportingFiles/Monal/Pods/OpenSSL-Universal/ios/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wheels.ChatChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/ChatChat/SupportingFiles/ObjecCFiles/ChatChat-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ADCA8352497C05B005A45D5 /* Build configuration list for PBXProject "ChatChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADCA84C2497C05C005A45D5 /* Debug */,
+				1ADCA84D2497C05C005A45D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADCA84E2497C05C005A45D5 /* Build configuration list for PBXNativeTarget "ChatChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADCA84F2497C05C005A45D5 /* Debug */,
+				1ADCA8502497C05C005A45D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1ADCA8322497C05B005A45D5 /* Project object */;
+}

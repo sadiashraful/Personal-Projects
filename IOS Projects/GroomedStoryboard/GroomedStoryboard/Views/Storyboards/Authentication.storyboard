@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMS-No-jXa">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMS-No-jXa" customClass="AppLogoAndNameView" customModule="GroomedStoryboard" customModuleProvider="target">
                                 <rect key="frame" x="63" y="80" width="288" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GROOMED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5D-W7-N2d">
@@ -42,11 +42,15 @@
                                     <constraint firstItem="atG-OR-wcR" firstAttribute="width" secondItem="pMS-No-jXa" secondAttribute="width" multiplier="0.135417" id="WCs-sr-aYK"/>
                                     <constraint firstItem="atG-OR-wcR" firstAttribute="leading" secondItem="pMS-No-jXa" secondAttribute="leading" constant="18" id="WQ7-Fn-EE6"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="appLogo" destination="atG-OR-wcR" id="8Ef-JS-jDt"/>
+                                    <outlet property="appName" destination="m5D-W7-N2d" id="jkS-ZC-oGn"/>
+                                </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wG-jc-bHL">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wG-jc-bHL" customClass="MasterContainerView" customModule="GroomedStoryboard" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="200" width="414" height="696"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ib3-Gw-Qje">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ib3-Gw-Qje" customClass="LoginCredentialsContainerView" customModule="GroomedStoryboard" customModuleProvider="target">
                                         <rect key="frame" x="8" y="48" width="398" height="352"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25a-im-E50">
@@ -87,7 +91,7 @@
                                                 </state>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="yZG-xP-a8O" firstAttribute="height" secondItem="Ib3-Gw-Qje" secondAttribute="height" multiplier="0.0965909" id="0hP-1B-swz"/>
                                             <constraint firstAttribute="trailing" secondItem="DXn-ds-mVg" secondAttribute="trailing" constant="20" symbolic="YES" id="7UW-Hv-WpO"/>
@@ -118,8 +122,18 @@
                                             <constraint firstItem="25a-im-E50" firstAttribute="height" secondItem="Ib3-Gw-Qje" secondAttribute="height" multiplier="0.0710227" id="rsw-AO-2Mn"/>
                                             <constraint firstItem="VtT-74-zCF" firstAttribute="top" secondItem="yZG-xP-a8O" secondAttribute="bottom" constant="3" id="utG-HD-5H5"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="emailLabel" destination="25a-im-E50" id="nfT-YX-REP"/>
+                                            <outlet property="emailLineView" destination="pNa-UR-gnP" id="PH5-GY-Vzu"/>
+                                            <outlet property="emailTextField" destination="kMw-ah-ehz" id="2GW-Xn-wSj"/>
+                                            <outlet property="forgotPasswordButton" destination="DXn-ds-mVg" id="Efi-Ri-PC8"/>
+                                            <outlet property="passTextField" destination="yZG-xP-a8O" id="dVu-tA-Y88"/>
+                                            <outlet property="passwordLabel" destination="aEQ-C5-0dk" id="pxS-Cr-35X"/>
+                                            <outlet property="passwordLineView" destination="VtT-74-zCF" id="Vgx-mv-vgx"/>
+                                            <outlet property="signInButton" destination="n76-uJ-3hp" id="6rn-2W-EM8"/>
+                                        </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAr-rH-VaX">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAr-rH-VaX" customClass="SocialMediaSignInContainerView" customModule="GroomedStoryboard" customModuleProvider="target">
                                         <rect key="frame" x="8" y="420" width="398" height="223"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fh4-xF-gkN">
@@ -140,25 +154,29 @@
                                                         <color key="backgroundColor" red="0.56078431370000004" green="0.60784313729999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XY7-U1-Dx5">
-                                                        <rect key="frame" x="85" y="52" width="45" height="45"/>
+                                                        <rect key="frame" x="85" y="63" width="45" height="50"/>
                                                         <state key="normal" image="facebookLogo"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAJ-Yd-gRy">
-                                                        <rect key="frame" x="158" y="52" width="45" height="45"/>
+                                                        <rect key="frame" x="158" y="63" width="45" height="50"/>
                                                         <state key="normal" image="whatsappLogo"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZW-E8-3En">
-                                                        <rect key="frame" x="229" y="52" width="45" height="45"/>
+                                                        <rect key="frame" x="229" y="63" width="45" height="50"/>
                                                         <state key="normal" image="twitterLogo"/>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="XY7-U1-Dx5" firstAttribute="top" secondItem="D8b-IW-TAQ" secondAttribute="bottom" constant="29" id="1Sk-bY-nEr"/>
                                                     <constraint firstAttribute="trailing" secondItem="PZW-E8-3En" secondAttribute="trailing" constant="87" id="2ed-BB-iQN"/>
                                                     <constraint firstAttribute="trailing" secondItem="UnW-OD-KdY" secondAttribute="trailing" constant="32" id="41x-gm-vAu"/>
                                                     <constraint firstItem="UnW-OD-KdY" firstAttribute="height" secondItem="fh4-xF-gkN" secondAttribute="height" multiplier="0.03125" id="D0L-KB-CbL"/>
+                                                    <constraint firstItem="PZW-E8-3En" firstAttribute="top" secondItem="79G-v7-gse" secondAttribute="bottom" constant="30" id="JL3-U2-Sxr"/>
+                                                    <constraint firstItem="XY7-U1-Dx5" firstAttribute="centerY" secondItem="WAJ-Yd-gRy" secondAttribute="centerY" id="KiJ-qg-bV4"/>
+                                                    <constraint firstItem="WAJ-Yd-gRy" firstAttribute="height" secondItem="fh4-xF-gkN" secondAttribute="height" multiplier="0.390625" id="LcU-qR-Sq9"/>
+                                                    <constraint firstItem="XY7-U1-Dx5" firstAttribute="height" secondItem="fh4-xF-gkN" secondAttribute="height" multiplier="0.390625" id="MVE-cv-oAM"/>
                                                     <constraint firstItem="UnW-OD-KdY" firstAttribute="width" secondItem="fh4-xF-gkN" secondAttribute="width" multiplier="0.221607" id="O8q-WG-JLB"/>
+                                                    <constraint firstItem="PZW-E8-3En" firstAttribute="height" secondItem="fh4-xF-gkN" secondAttribute="height" multiplier="0.390625" id="P5c-2k-XGp"/>
                                                     <constraint firstItem="D8b-IW-TAQ" firstAttribute="height" secondItem="fh4-xF-gkN" secondAttribute="height" multiplier="0.03125" id="Pta-IJ-vcy"/>
                                                     <constraint firstItem="79G-v7-gse" firstAttribute="height" secondItem="fh4-xF-gkN" secondAttribute="height" multiplier="0.195312" id="Q0A-if-bRT"/>
                                                     <constraint firstItem="D8b-IW-TAQ" firstAttribute="width" secondItem="fh4-xF-gkN" secondAttribute="width" multiplier="0.221607" id="SRf-c8-eDq"/>
@@ -166,30 +184,34 @@
                                                     <constraint firstItem="79G-v7-gse" firstAttribute="top" secondItem="fh4-xF-gkN" secondAttribute="top" constant="8" id="Wb2-lb-Z0g"/>
                                                     <constraint firstItem="XY7-U1-Dx5" firstAttribute="leading" secondItem="fh4-xF-gkN" secondAttribute="leading" constant="85" id="ZQR-FU-fWl"/>
                                                     <constraint firstItem="D8b-IW-TAQ" firstAttribute="leading" secondItem="fh4-xF-gkN" secondAttribute="leading" constant="32" id="dSH-Cl-Tpx"/>
+                                                    <constraint firstItem="WAJ-Yd-gRy" firstAttribute="centerY" secondItem="PZW-E8-3En" secondAttribute="centerY" id="eew-Dl-cPp"/>
                                                     <constraint firstItem="PZW-E8-3En" firstAttribute="leading" secondItem="WAJ-Yd-gRy" secondAttribute="trailing" constant="26" id="fjp-Wf-8xx"/>
-                                                    <constraint firstItem="WAJ-Yd-gRy" firstAttribute="height" secondItem="fh4-xF-gkN" secondAttribute="height" multiplier="0.351562" id="hei-rf-Ub8"/>
-                                                    <constraint firstAttribute="bottom" secondItem="WAJ-Yd-gRy" secondAttribute="bottom" constant="31" id="mwE-VU-ZbZ"/>
                                                     <constraint firstItem="UnW-OD-KdY" firstAttribute="top" secondItem="fh4-xF-gkN" secondAttribute="top" constant="18" id="n3a-Rq-zXy"/>
-                                                    <constraint firstAttribute="bottom" secondItem="PZW-E8-3En" secondAttribute="bottom" constant="31" id="n6C-YM-AgW"/>
                                                     <constraint firstItem="XY7-U1-Dx5" firstAttribute="width" secondItem="fh4-xF-gkN" secondAttribute="width" multiplier="0.124654" id="nGH-wP-kH1"/>
                                                     <constraint firstItem="WAJ-Yd-gRy" firstAttribute="width" secondItem="fh4-xF-gkN" secondAttribute="width" multiplier="0.124654" id="rMG-cl-I6b"/>
                                                     <constraint firstItem="79G-v7-gse" firstAttribute="centerX" secondItem="fh4-xF-gkN" secondAttribute="centerX" id="tgq-EY-PXc"/>
-                                                    <constraint firstItem="XY7-U1-Dx5" firstAttribute="height" secondItem="fh4-xF-gkN" secondAttribute="height" multiplier="0.351562" id="v7B-Xn-prT"/>
                                                     <constraint firstItem="D8b-IW-TAQ" firstAttribute="top" secondItem="fh4-xF-gkN" secondAttribute="top" constant="19" id="v9c-8b-JY6"/>
                                                     <constraint firstItem="PZW-E8-3En" firstAttribute="width" secondItem="fh4-xF-gkN" secondAttribute="width" multiplier="0.124654" id="vzy-5u-lWt"/>
-                                                    <constraint firstItem="PZW-E8-3En" firstAttribute="height" secondItem="fh4-xF-gkN" secondAttribute="height" multiplier="0.351562" id="x9q-Wu-1bT"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="fh4-xF-gkN" firstAttribute="centerX" secondItem="cAr-rH-VaX" secondAttribute="centerX" id="03c-D8-TZV"/>
                                             <constraint firstItem="fh4-xF-gkN" firstAttribute="width" secondItem="cAr-rH-VaX" secondAttribute="width" multiplier="0.907035" id="HJy-t9-GwT"/>
                                             <constraint firstItem="fh4-xF-gkN" firstAttribute="top" secondItem="cAr-rH-VaX" secondAttribute="top" constant="11" id="Of4-dj-XyU"/>
                                             <constraint firstItem="fh4-xF-gkN" firstAttribute="height" secondItem="cAr-rH-VaX" secondAttribute="height" multiplier="0.573991" id="agA-fa-61c"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="facebookButton" destination="XY7-U1-Dx5" id="TTn-v3-lmv"/>
+                                            <outlet property="lineViewOne" destination="D8b-IW-TAQ" id="NQR-A0-hiq"/>
+                                            <outlet property="lineViewTwo" destination="UnW-OD-KdY" id="YRy-7j-jQo"/>
+                                            <outlet property="orSignInWithLabel" destination="79G-v7-gse" id="Z2v-Re-2oR"/>
+                                            <outlet property="twitterButton" destination="PZW-E8-3En" id="97X-Gn-wbE"/>
+                                            <outlet property="whatsappButton" destination="WAJ-Yd-gRy" id="k9R-JC-6Ut"/>
+                                        </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJW-av-a9K">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJW-av-a9K" customClass="DontHaveAccountContainerView" customModule="GroomedStoryboard" customModuleProvider="target">
                                         <rect key="frame" x="27" y="647" width="360" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPc-WM-Ccm">
@@ -206,7 +228,7 @@
                                                 </state>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="KLy-4B-aOc" secondAttribute="trailing" constant="35" id="2qz-sF-MJD"/>
                                             <constraint firstItem="NPc-WM-Ccm" firstAttribute="height" secondItem="XJW-av-a9K" secondAttribute="height" multiplier="0.735294" id="NBh-Kx-rZj"/>
@@ -217,6 +239,10 @@
                                             <constraint firstItem="NPc-WM-Ccm" firstAttribute="leading" secondItem="XJW-av-a9K" secondAttribute="leading" constant="31" id="tn4-jB-2TB"/>
                                             <constraint firstItem="KLy-4B-aOc" firstAttribute="height" secondItem="XJW-av-a9K" secondAttribute="height" multiplier="0.735294" id="xIJ-ao-X5F"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="dontHaveAccountLabel" destination="NPc-WM-Ccm" id="i8z-Dm-2aG"/>
+                                            <outlet property="signUpButton" destination="KLy-4B-aOc" id="TRa-73-qAO"/>
+                                        </connections>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n76-uJ-3hp">
                                         <rect key="frame" x="27" y="319" width="360" height="56"/>
@@ -227,7 +253,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="XJW-av-a9K" firstAttribute="width" secondItem="3wG-jc-bHL" secondAttribute="width" multiplier="0.869565" id="8pc-e9-Fec"/>
                                     <constraint firstItem="Ib3-Gw-Qje" firstAttribute="width" secondItem="3wG-jc-bHL" secondAttribute="width" multiplier="0.961353" id="Bcq-vI-qre"/>
@@ -246,6 +272,11 @@
                                     <constraint firstItem="n76-uJ-3hp" firstAttribute="width" secondItem="Ib3-Gw-Qje" secondAttribute="width" multiplier="0.904523" id="mKp-EE-UrL"/>
                                     <constraint firstItem="XJW-av-a9K" firstAttribute="centerX" secondItem="3wG-jc-bHL" secondAttribute="centerX" id="nsM-Gn-vcj"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="dontHaveAccountContainerView" destination="XJW-av-a9K" id="dXf-2t-RoA"/>
+                                    <outlet property="loginCredentialsContainerView" destination="Ib3-Gw-Qje" id="2gz-wH-pnz"/>
+                                    <outlet property="socialMediaSignInContainerView" destination="cAr-rH-VaX" id="D2g-Xe-SP3"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rPO-i0-AY4"/>
@@ -261,6 +292,10 @@
                             <constraint firstItem="3wG-jc-bHL" firstAttribute="trailing" secondItem="rPO-i0-AY4" secondAttribute="trailing" id="xPt-Sk-bcM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appLogoAndNameView" destination="pMS-No-jXa" id="OkE-C0-SGD"/>
+                        <outlet property="masterContainerView" destination="3wG-jc-bHL" id="ZAo-2d-cpC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IsJ-f2-Fja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

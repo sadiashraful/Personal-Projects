@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A589FA09-7F78-4D8A-A4B4-AE9B8C72E695"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "3420BB89-2181-420E-B4F6-BA0E2F8334F6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46935467-1EB7-44BC-892D-8C26BCF430EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatChat/SystemDesign/Messaging/Controller/AddContactVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "addContactPressed(byUser:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "46935467-1EB7-44BC-892D-8C26BCF430EC - daffbc0958cc09cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChatChat.AddContactVC.addContactPressed(byUser: __C.UIButton) -&gt; ()"
+                  moduleName = "ChatChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sadi/Desktop/Work/ios-xmpp-demo/ChatChat/ChatChat/SystemDesign/Messaging/Controller/AddContactVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "2180">
+               </Location>
+               <Location
+                  uuid = "46935467-1EB7-44BC-892D-8C26BCF430EC - daffbc0958cc09cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChatChat.AddContactVC.addContactPressed(byUser: __C.UIButton) -&gt; ()"
+                  moduleName = "ChatChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sadi/Desktop/Work/ios-xmpp-demo/ChatChat/ChatChat/SystemDesign/Messaging/Controller/AddContactVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "4068">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "39F789BC-2BF4-431A-880C-7D33D487AC4F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x1b2b12e90">
+            <Locations>
+               <Location
+                  uuid = "39F789BC-2BF4-431A-880C-7D33D487AC4F - 11a131497bcf4b0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "os_activity_scope_leave"
+                  moduleName = "libsystem_trace.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61ABA878-1A61-4136-8443-531C69FB2E43"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatChat/SystemDesign/Messaging/Controller/ContactDetailsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "addContact()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "218A0008-0BCB-4B9D-AC40-674E02B65AEE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatChat/SystemDesign/Messaging/Controller/ContactDetailsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
+            landmarkName = "addContact()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "638D4DF5-00AC-44DC-A063-75EBB221EE16"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatChat/SystemDesign/Messaging/Controller/ConversationDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "912"
+            endingLineNumber = "912"
+            landmarkName = "upload(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

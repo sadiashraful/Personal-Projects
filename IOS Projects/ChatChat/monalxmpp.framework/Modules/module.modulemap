@@ -1,0 +1,6 @@
+framework module monalxmpp {
+  umbrella header "monalxmpp.h"
+
+  export *
+  module * { export * }
+}
