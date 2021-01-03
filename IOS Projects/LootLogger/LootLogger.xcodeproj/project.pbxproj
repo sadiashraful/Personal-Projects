@@ -44,7 +44,6 @@
 		1A1EE8F6259500F400B335CE = {
 			isa = PBXGroup;
 			children = (
-				1A1EE9172595014E00B335CE /* ItemsViewController.swift */,
 				1A1EE901259500F500B335CE /* LootLogger */,
 				1A1EE900259500F500B335CE /* Products */,
 			);
@@ -61,16 +60,57 @@
 		1A1EE901259500F500B335CE /* LootLogger */ = {
 			isa = PBXGroup;
 			children = (
-				1A1EE902259500F500B335CE /* AppDelegate.swift */,
-				1A1EE904259500F500B335CE /* SceneDelegate.swift */,
-				1A1EE908259500F500B335CE /* Main.storyboard */,
-				1A1EE91B2595026400B335CE /* Item.swift */,
-				1A1EE91E259509BE00B335CE /* ItemStore.swift */,
-				1A1EE90B259500F500B335CE /* Assets.xcassets */,
-				1A1EE90D259500F500B335CE /* LaunchScreen.storyboard */,
+				1ABA890E25A0E08D002B2684 /* New Group */,
+				1ABA891225A0E09E002B2684 /* Resources */,
+				1ABA891125A0E09C002B2684 /* Models */,
+				1ABA891025A0E099002B2684 /* Views */,
+				1ABA890F25A0E096002B2684 /* Controllers */,
 				1A1EE910259500F500B335CE /* Info.plist */,
 			);
 			path = LootLogger;
+			sourceTree = "<group>";
+		};
+		1ABA890E25A0E08D002B2684 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		1ABA890F25A0E096002B2684 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EE9172595014E00B335CE /* ItemsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1ABA891025A0E099002B2684 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EE908259500F500B335CE /* Main.storyboard */,
+				1A1EE90B259500F500B335CE /* Assets.xcassets */,
+				1A1EE90D259500F500B335CE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1ABA891125A0E09C002B2684 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EE91B2595026400B335CE /* Item.swift */,
+				1A1EE91E259509BE00B335CE /* ItemStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1ABA891225A0E09E002B2684 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EE902259500F500B335CE /* AppDelegate.swift */,
+				1A1EE904259500F500B335CE /* SceneDelegate.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
